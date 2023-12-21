@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Nav visstate = {isVisibleState}/>
       <Routes>
-      <Route path='/' element={<Home Showmsg = {showMessage} />} />
+      <Route path='/*' element={<Home Showmsg = {showMessage} />} />
       </Routes>
     </div>
     </Router>

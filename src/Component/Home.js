@@ -59,7 +59,8 @@ function Home(props) {
   };
 
   return (
-    <div className="flex flex-col p-4 bg-purple-800 text-white overflow-hidden">
+    <div>
+      <div className="flex justify-between p-4 bg-purple-800 text-white overflow-hidden">
       <div className="mt-2 ml-7 p-2 add-todo border-2 border-solid border-white w-1/2 h-auto">
         <h1 className="font-bold text-2xl ml-10 p-2">
           Add the Karya's
@@ -106,8 +107,9 @@ function Home(props) {
           </button>
         </div>
       </div>
-      <div className="absolute right-20 p-1 border-2 border-solid border-white mt-2 overflow-scroll" style={{height:'70vh'}}>
+      <div className="flex-initial p-1 border-2 border-solid border-white mt-2 overflow-scroll w-auto" style={{height:'70vh'}}>
       <Seeall key={reloadSeeAll} tryreload ={reloadfn} visfn = {props.Showmsg} />
+      </div>
       </div>
     </div>
   );
